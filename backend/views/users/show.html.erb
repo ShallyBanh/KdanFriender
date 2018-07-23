@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+  <title><%= user[:name] %></title>
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=no">
+  <style type="text/css" media="screen">
+    body, html {
+      font-size: 16px;
+      font-family: "Helvetica Neue";
+    }
+  </style>
+</head>
+<body>
+  <h1><%= user[:name] %></h1>
+  <p>
+    <%= user[:random] %>
+  </p>
+  <p>
+    <a href="<%= "/users/#{user[:id]}/pass.pkpass" %>">Download Pass</a>
+  </p>
+</body>
+</html>
